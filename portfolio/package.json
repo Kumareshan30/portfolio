@@ -14,6 +14,7 @@
     "autoprefixer": "^10.0.0",
     "clsx": "^1.2.1",
     "lottie": "^0.0.1",
+    "lucide-react": "^0.507.0",
     "next": "14.x",
     "postcss": "^8.0.0",
     "react": "18.x",

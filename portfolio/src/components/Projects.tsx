@@ -31,7 +31,7 @@ export function Projects() {
   return (
     <section id="projects" className="py-20 px-8 max-w-7xl mx-auto">
       <h3 className="text-4xl font-semibold text-primary mb-8">Projects</h3>
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((proj) => (
           <ProjectCard key={proj.name} {...proj} />
         ))}

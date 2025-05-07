@@ -34,43 +34,36 @@ const skills: Skill[] = [
     { name: 'TypeScript', logo: '/logos/typescript.png', description: 'Type-safe development with TypeScript.', usedIn: ['React projects', 'Azure microservices'] },
   ];
 
-export function Skills() {
-  const [active, setActive] = useState<Skill | null>(null);
-  return (
-    <section id="skills" className="py-20 px-8 max-w-7xl mx-auto">
-      <h3 className="text-4xl font-semibold text-primary mb-8">Skills</h3>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-        {skills.map((skill) => (
-          <button
-            key={skill.name}
-            className="flex flex-col items-center p-4 bg-surface rounded-lg shadow hover:bg-surface/80 transition"
-            onClick={() => setActive(skill)}
-          >
-            <img src={skill.logo} alt={`${skill.name} logo`} className="h-12 w-12 mb-2" />
-            <span className="text-accent">{skill.name}</span>
-          </button>
-        ))}
-      </div>
-      {active && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <div className="bg-background p-6 rounded-2xl max-w-lg mx-auto">
-            <h4 className="text-2xl font-bold text-primary mb-4">{active.name}</h4>
-            <p className="text-accent mb-4">{active.description}</p>
-            <h5 className="font-medium text-surface mb-2">Used In:</h5>
-            <ul className="list-disc list-inside text-accent">
-              {active.usedIn.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-            <button
-              className="mt-6 px-4 py-2 bg-primary text-background rounded hover:bg-primary/90"
-              onClick={() => setActive(null)}
-            >
-              Close
+  export function Skills() {
+    const [active, setActive] = useState<Skill | null>(null);
+    return (
+      <section id="skills" className="py-20 px-8 max-w-7xl mx-auto">
+        <h3 className="text-4xl font-semibold text-primary mb-8">Skills</h3>
+        <div className="grid grid-cols-4 md:grid-cols-4 gap-6">
+          {skills.map((skill) => (
+            <button key={skill.name} className="flex flex-col items-center p-4 bg-surface rounded-lg shadow hover:bg-surface/80 transition" onClick={() => setActive(skill)}>
+              <img src={skill.logo} alt={`${skill.name} logo`} className="h-12 w-12 mb-2" />
+              <span className="text-accent">{skill.name}</span>
             </button>
-          </div>
+          ))}
         </div>
-      )}
-    </section>
-  );
-}
+        {active && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <div className="bg-background p-6 rounded-2xl max-w-lg mx-auto">
+              <h4 className="text-2xl font-bold text-primary mb-4">{active.name}</h4>
+              <p className="text-accent mb-4">{active.description}</p>
+              <h5 className="font-medium text-surface mb-2">Used In:</h5>
+              <ul className="list-disc list-inside text-accent">
+                {active.usedIn.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+              <button className="mt-6 px-4 py-2 bg-primary text-background rounded hover:bg-primary/90" onClick={() => setActive(null)}>
+                Close
+              </button>
+            </div>
+          </div>
+        )}
+      </section>
+    )
+  }
