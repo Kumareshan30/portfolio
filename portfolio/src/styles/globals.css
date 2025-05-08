@@ -9,3 +9,14 @@ body {
 a {
   @apply text-primary hover:underline;
 }
+
+html {
+  /* 80% zoom */
+  zoom: 0.8;
+}
+
+@layer base {
+  html {
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+  }
+}
