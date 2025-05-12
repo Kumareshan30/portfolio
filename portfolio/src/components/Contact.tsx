@@ -12,7 +12,7 @@ export function Contact() {
     {
       name: 'LinkedIn',
       link: 'https://linkedin.com/in/kumareshan30',
-      logo: '/logos/linkedin.svg',
+      logo: '/logos/linkedin.png',
       info: 'linkedin.com/in/kumareshan30'
     },
     {

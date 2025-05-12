@@ -6,6 +6,7 @@ import { Projects } from '../components/Projects';
 import { Footer } from '../components/Footer';
 import { Skills } from '../components/Skills';
 import { Contact } from '../components/Contact';
+import { Certifications } from '../components/Certifications';
 
 export default function Home() {
   return (
@@ -14,9 +15,10 @@ export default function Home() {
       <main>
         <Hero />
         <About />
-        <Skills />
         <Experience />
+        <Skills />
         <Projects />
+        <Certifications />
         <Contact />
       </main>
       <Footer />

@@ -93,12 +93,22 @@ export function Hero() {
             TensorFlow, and cloud deployments, I turn raw data into actionable insights and predictive models that drive
             real-world impact.
           </p>
+          <div className="space-x-4">
           <a
-            href="#projects"
-            className="inline-block border border-primary px-6 py-3 rounded hover:bg-primary/10 transition"
-          >
-            Check out my work
-          </a>
+    href="#projects"
+    className="inline-block border border-primary px-6 py-3 rounded hover:bg-primary/10 transition text-base sm:text-lg"
+  >
+    Check out my work
+  </a>
+  <a
+    href="/KumareshanS_Resume.pdf"
+    download
+    className="inline-block bg-primary text-background px-6 py-3 rounded hover:bg-primary/90 transition text-base sm:text-lg"
+  >
+    Download Resume
+  </a>
+
+          </div>
         </div>
 
         {/* Right side: 3D network graph (hidden on mobile) */}

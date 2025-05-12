@@ -9,9 +9,9 @@ export function NavBar() {
   return (
     <nav className="fixed w-full bg-surface/80 backdrop-blur p-4 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <Link href="/" className="text-primary font-bold text-xl hover:text-white md:hidden">
+        <a href="/KumareshanS_Resume.pdf" download className="text-primary font-bold text-xl hover:text-white md:hidden">
           KS
-        </Link>
+        </a>
         {/* Hamburger button */}
         <button
           className="md:hidden text-accent"
