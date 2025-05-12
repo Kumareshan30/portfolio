@@ -21,8 +21,8 @@ const projects = [
   },
   {
     name: '2D Map Generating Autonomous Rover',
-    description: 'SLAM LIDAR mapping displayed via React.js on Heroku; Python-based controls on Raspberry Pi',
-    tech: ['SLAM', 'LIDAR', 'React.js', 'Python']
+    description: 'I architected and built a fully autonomous rover that navigates and maps unknown indoor environments using 2D LIDAR–based SLAM. Onboard, a ROS-inspired Python stack ingests real-time laser scans, performs scan-matching and pose estimation, and incrementally builds an occupancy‐grid map via a particle-filter SLAM algorithm. A PID–driven control loop steers the differential–drive platform around obstacles, while a lightweight WebSocket bridge streams live map and pose updates to a Node.js service. The front-end—built in React.js and hosted on Heroku—renders an interactive 2D map, live telemetry, and path‐planning overlays, enabling remote monitoring and teleoperation. Throughout the project I set up Dockerized CI/CD on GitHub Actions, managed sensor calibration, optimized Python for real-time performance, and ensured robust error handling and reconnection logic for seamless web visualization.',
+    tech: ['SLAM', 'LIDAR', 'React.js', 'Python', 'Robotics', 'SLAM', 'Deployment and CI/CD', 'RaspberryPi', '']
   },
   {
     name: 'Ridge Regression and Regularization using Synthetic Data',
@@ -33,13 +33,13 @@ const projects = [
   },
   {
     name: 'Loan Default Prediction System',
-    description: 'Big Data analysis and real-time streaming using Apache PySpark, Hadoop, and Kafka',
-    tech: ['PySpark', 'Hadoop', 'Kafka']
+    description: 'This end-to-end web application unifies data ingestion, transformation, modeling, and customer segmentation for loan‐application analytics. It begins by loading four raw CSV tables—applications, previous applications, defaults, and a value dictionary—while normalizing column names and caching the data for responsiveness. Nine engineered features (loan-to-income ratio, age buckets, aggregate past-credit exposure, credit-worthiness tiers, etc.) are computed on demand, each accompanied by a clear rationale. Users explore default-rate balances and feature distributions through dynamic count and histogram charts. In the modeling section, they select from Random Forest and Gradient-Boosting classifiers and choose which engineered features to include; performance metrics (accuracy, precision, recall, ROC AUC) and confusion matrices update instantly. Finally, the app provides K-Means–based customer segmentation—letting users specify cluster counts and feature sets—and visualizes the resulting segments with silhouette scoring and 2D scatter plots. This comprehensive dashboard streamlines the path from raw big-data tables to actionable risk insights and customer clusters, all within an intuitive browser-based interface.',
+    tech: ['PySpark', 'Hadoop', 'Kafka', 'SparkSQL', 'Spark ML', 'Exploratory Data Analysis', 'Data Engineering', 'Feature Engineering', 'Statistical Analysis', 'Machine Learning']
   },
   {
-    name: 'Real Madrid vs Barcelona Analysis Dashboard',
-    description: 'Interactive dashboard with statistical analysis and visualizations using D3.js and R Shiny',
-    tech: ['D3.js', 'R Shiny', 'JavaScript', 'R', 'StatsbombR', 'Plotly']
+    name: 'Interactive Football Analytics Dashboard (2015–16 Barça vs. Real Madrid)',
+    description: 'I built a dynamic web dashboard that brings the 2015–16 attacking battle between Barcelona’s “MSN” and Real Madrid’s “BBC” to life through rich, interactive visualizations powered by R Shiny and custom D3.js components. Behind the scenes, event- and tracking-level data (xG, xA, shot locations, pass endpoints, player positions) is ingested via the StatsBombR API and wrangled with tidyverse. Core plots—average position maps, shot/pass heatmaps, stacked xG + xA bar charts, detailed pass‐ and shot‐maps—were crafted in ggplot2 and converted to interactive Plotly overlays or D3.js SVGs for pan/zoom, tooltips, and real-time filtering. Users can toggle between team and player views, select individual attackers, and drill down on metrics like non-penalty xG/min or pass-into-box counts. The result is a seamless dashboard that conveys not only who scored and assisted, but how and where the two greatest front‐threes of that season operated on the pitch.',
+    tech: ['D3.js', 'R Shiny', 'JavaScript', 'R', 'StatsbombR', 'Plotly', 'Spatial Analysis', 'Statistical Analysis','Data Wrangling','Exploratory Data Analysis','']
   },
   {
     name: 'Bayes Classifier vs Logistic Regression using Cancer Dataset',
