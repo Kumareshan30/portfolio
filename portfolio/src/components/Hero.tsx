@@ -96,7 +96,7 @@ export function Hero() {
           <div className="space-x-4">
           <a
     href="#projects"
-    className="inline-block border border-primary px-6 py-3 rounded hover:bg-primary/10 transition text-base sm:text-lg"
+    className="hidden md:inline-block border border-primary px-6 py-3 rounded hover:bg-primary/10 transition text-base sm:text-lg"
   >
     Check out my work
   </a>
