@@ -63,7 +63,7 @@ export function Certifications() {
             )}
             <h4 className="text-xl font-medium text-primary mb-1">{cert.title}</h4>
             <p className="text-accent mb-2">{cert.issuer}</p>
-            <p className="text-sm text-surface">Issued {cert.date}</p>
+            <p className="text-sm text-white">Issued {cert.date}</p>
           </a>
         ))}
       </div>
