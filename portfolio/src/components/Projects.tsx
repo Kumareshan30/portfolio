@@ -6,6 +6,13 @@ import { ProjectCard } from './ProjectCard';
 
 const projects = [
   {
+  name: 'Trustiee',
+  description: 'Trustiee is your all-in-one privacy assistant designed to make digital transparency effortless. Born from real frustrations—like unreadable Terms & Conditions, sneaky app permissions, and hidden trackers—Trustiee lets users instantly summarize privacy policies, scan apps for risky permissions, and explore data usage trends through visual infographics and interactive games. With a pulsing “Scroll to Learn More” hero banner, animated infosections, and a dark/light mode interface, the platform combines accessibility and aesthetics to educate users on their digital rights. Powered by modern LLM APIs for legal summarization and wrapped in an engaging Vue-based frontend, Trustiee redefines how privacy awareness is delivered to everyday users.',
+  websiteLink: 'https://trustiee.pages.dev/',
+  GitHubLink: 'https://github.com/Kumareshan30/Trustiee',
+  tech: ["React.js", "JavaScript", "Python", "EDA", "PostgreSQL", "SQLAlchemy", "Tailwind CSS", "DeepSeek LLM API", "FastAPI", "Plotly"]
+},
+  {
     name: 'CAMELS Australia Hydrology Dashboard',
     description: 'This dashboard brings together Australia’s largest network of gauged catchments to let you explore historical streamflow, hydrometeorology, landscape attributes, and soil properties all in one place. From plotting decades of monthly flows and ARIMA forecasts (with built-in trend testing) to inspecting catchment geology/soil textures via boxplots, scatterplots, PCA biplots, and cluster/heatmap analyses—every tool is designed to help you uncover patterns, group similar catchments, spot outliers, and feed those insights back into hydrological models or infrastructure planning. Whether you’re studying extreme precipitation events, seasonal water availability, or regional soil influences, this interactive platform makes it easy to visualize, compare, and interpret key hydrological and environmental signals for better water-resource management and prediction across Australia.',
     websiteLink: '',
