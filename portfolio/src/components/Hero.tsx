@@ -101,7 +101,7 @@ export function Hero() {
     Check out my work
   </a>
   <a
-    href="/KumareshanS_Resume.pdf"
+    href="/Kumareshan_Resume.pdf"
     download
     className="inline-block bg-primary text-background px-6 py-3 rounded hover:bg-primary/90 transition text-base sm:text-lg"
   >
